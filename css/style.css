@@ -1,0 +1,25 @@
+/* Den skal være gennemsigtig og skubbe y-aksen fra klassen 20px ned med 0.5s */
+.intro-text {
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+
+}
+
+/* opacity bliver sat til 1 for at man kan se den. */
+.intro-appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+/* Får tekst og billede til at være ved siden af hinanden */
+.intro-content {
+    display: grid;
+    grid-template-columns: no-repeat(2, 1fr);
+}
+
+.intro-billede {
+    grid-column: 2;
+}
